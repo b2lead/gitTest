@@ -19,6 +19,7 @@ pipeline {
                 echo 'Deploying'
                 echo 'Pulling...' + env.BRANCH_NAME
                 sh 'ls -a'
+                sh 'sudo docker-compose up -d'
             }
         }
     }
